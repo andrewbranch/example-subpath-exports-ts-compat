@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "build": "tsc",
+    "prestart": "npm run build",
+    "start": "node out/main.mjs"
+  },
+  "volta": {
+    "node": "16.17.0"
+  }
+}
