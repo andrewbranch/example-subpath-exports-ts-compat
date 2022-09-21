@@ -1,5 +1,5 @@
 {
-  "name": "example-exports-typescript-resolution-compat",
+  "name": "example-subpath-exports-ts-compat",
   "version": "1.0.0",
   "description": "",
   "private": true,
