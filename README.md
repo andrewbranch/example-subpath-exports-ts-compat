@@ -30,6 +30,7 @@ Each of the two TypeScript projects successfully type checks with `npm run build
 Note that the [`types-versions-wildcard`](./examples/node_modules/types-versions-wildcards) fallback strategy is only  fallback for TypeScript, so it does not help users who are on Node 11 or other runtimes/bundlers that lack `exports` support. It is included because it is the only method that offers an analog to `*` wildcards in subpath `exports`.
 
 | | [`extensionless`](./examples/node_modules/extensionless) | [`package-json-redirects`](./examples/node_modules/package-json-redirects) | [`types-versions-wildcards`](./examples/node_modules/types-versions-wildcards) |
+|----------------------------------------|------------------|-----------------|------------------|
 | TypeScript `--moduleResolution node16` | ✅ via `exports` | ✅ via `exports` | ✅ via `exports` |
 | TypeScript `--moduleResolution node`   | ✅ via fallback  | ✅ via fallback  | ✅ via fallback  |
 | Node 12+                               | ✅ via `exports` | ✅ via `exports` | ✅ via `exports` |
