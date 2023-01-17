@@ -9,9 +9,13 @@ assert(extensionlessTwo === "extensionless/two/index.mjs");
 import { index as pjr } from "package-json-redirects";
 import { one as pjrOne } from "package-json-redirects/one";
 import { two as pjrTwo } from "package-json-redirects/two";
+import { one as pjrWcOne } from "package-json-redirects/three/one.js";
+import { two as pjrWcTwo } from "package-json-redirects/three/two.js";
 assert(pjr === "package-json-redirects/esm/index.js");
 assert(pjrOne === "package-json-redirects/esm/one.js");
 assert(pjrTwo === "package-json-redirects/esm/two.js");
+assert(pjrWcOne === "package-json-redirects/esm/one.js");
+assert(pjrWcTwo === "package-json-redirects/esm/two.js");
 
 import tvw from "types-versions-wildcards";
 import tvwOne from "types-versions-wildcards/one";
